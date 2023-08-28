@@ -5,6 +5,8 @@
       <LeafletMap></LeafletMap>
     </template>
 
+    <CV></CV>
+
     <!-- <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
@@ -21,7 +23,8 @@
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import MetaInformation from '@/components/MetaInformation.vue'
 import LeafletMap from '@/components/LeafletMap.vue'
-import GoogleMap from './GoogleMap.vue'
+import CV from './components/CV.vue'
+
 //import { RouterLink, RouterView } from 'vue-router'
 </script>
 <style scoped>
