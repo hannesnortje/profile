@@ -1,34 +1,30 @@
-<script setup lang="ts">
-//import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld />
+  <DefaultLayout>
+    <template #left>
+      <MetaInformation></MetaInformation>
+      <LeafletMap></LeafletMap>
+    </template>
 
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
-    </div>
-  </header>
+    <!-- <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav> -->
 
-  <!-- <RouterView /> -->
+    <!-- <RouterView /> -->
+    <template #right>
+      <div>test right</div>
+    </template>
+  </DefaultLayout>
 </template>
 
+<script setup lang="ts">
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
+import MetaInformation from '@/components/MetaInformation.vue'
+import LeafletMap from '@/components/LeafletMap.vue'
+import GoogleMap from './GoogleMap.vue'
+//import { RouterLink, RouterView } from 'vue-router'
+</script>
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 nav {
   width: 100%;
   font-size: 12px;
@@ -55,22 +51,6 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
   nav {
     text-align: left;
     margin-left: -1rem;
