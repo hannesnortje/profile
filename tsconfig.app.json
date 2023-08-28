@@ -1,6 +1,6 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "**/*.ts"],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "strict": true, // HERE
@@ -9,6 +9,5 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  },
-  "types": ["cypress"]
+  }
 }
