@@ -42,6 +42,7 @@ import 'leaflet/dist/leaflet.css'
 import { LMap, LTileLayer, LMarker, LTooltip, LRectangle } from '@vue-leaflet/vue-leaflet'
 import { useMouseInElement } from '@vueuse/core'
 import MapOverlay from './MapOverlay.vue'
+import { useElementVisibility } from '@vueuse/core'
 
 const props = defineProps({
   mapDetails: {
@@ -76,6 +77,14 @@ watch(
 const zoom = ref(4)
 
 const map = ref(null)
+
+const mapIsVisible = useElementVisibility(map)
+
+const emit = defineEmits(['mapIsVisible'])
+
+watch(mapIsVisible, () => {
+  emit('mapIsVisible', mapIsVisible.value)
+})
 
 const isOverlay = ref(false)
 

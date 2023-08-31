@@ -2,10 +2,11 @@
   <DefaultLayout>
     <template #left>
       <MetaInformation></MetaInformation>
-      <LeafletMap :mapDetails="mapPropDetails"></LeafletMap>
+      <LeafletMap :mapDetails="mapPropDetails" @mapIsVisible="mapIsVisible"></LeafletMap>
     </template>
     <div>
-      <CV @mapDetails="mapDetails"></CV>
+      <LeafletMap v-if="visible" :mapDetails="mapPropDetails" class="z-50"></LeafletMap>
+      <CV @mapDetails="mapDetails" :class="visible ? 'pt-12' : 'pt-0'"></CV>
     </div>
 
     <!-- <nav>
@@ -30,6 +31,16 @@ import { ref } from 'vue'
 import TechnicalToolboxVue from './components/TechnicalToolbox.vue'
 
 //import { RouterLink, RouterView } from 'vue-router'
+
+const visible = ref(false)
+
+const mapIsVisible = (value: boolean) => {
+  if (!value) {
+    visible.value = true
+  } else {
+    visible.value = false
+  }
+}
 
 const mapPropDetails = ref()
 
