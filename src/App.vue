@@ -5,8 +5,10 @@
       <LeafletMap :mapDetails="mapPropDetails" @mapIsVisible="mapIsVisible"></LeafletMap>
     </template>
     <div>
-      <LeafletMap v-if="visible" :mapDetails="mapPropDetails" class="z-50"></LeafletMap>
-      <CV @mapDetails="mapDetails" :class="visible ? 'pt-12' : 'pt-0'"></CV>
+      <row>
+        <LeafletMap v-if="visible" :mapDetails="mapPropDetails" class="z-50"></LeafletMap>
+        <CV @mapDetails="mapDetails" :class="visible ? 'pt-12' : 'pt-0'"></CV>
+      </row>
     </div>
 
     <!-- <nav>
