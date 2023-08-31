@@ -1,5 +1,13 @@
 <template>
   <div class="pt-3 pr-3 pl-3">
+    <div class="flex justify-end">
+      <button
+        @click="reverseCV"
+        class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+      >
+        Reverse
+      </button>
+    </div>
     <div class="pb-3" v-for="(item, index) in cv" :key="index">
       <div
         @mouseover="$emit('mapDetails', item.mapDetails)"
@@ -139,6 +147,10 @@ const cv = ref()
 onMounted(() => {
   cv.value = timeline
 })
+
+const reverseCV = () => {
+  cv.value.reverse()
+}
 
 const years = (index: number) => {
   if (cv.value[index].startYear && cv.value[index].endYear) {
