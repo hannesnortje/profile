@@ -18,12 +18,7 @@
           >{{ props.mapDetails.name }}</l-tooltip
         ></l-marker
       >
-      <l-rectangle
-        v-if="props.mapDetails.rectangle"
-        :bounds="[
-          [-11.939001483912847, 10.69196151310048],
-          [-34.981988293889124, 40.442936354762395]
-        ]"
+      <l-rectangle v-if="props.mapDetails.rectangle" :bounds="props.mapDetails.rectangle"
         ><l-tooltip
           setTooltipContent="props.mapDetails.name"
           :options="{ permanent: true, direction: 'center' }"

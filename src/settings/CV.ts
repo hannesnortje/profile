@@ -33,7 +33,7 @@ const missionary = {
   startYear: 1993,
   endYear: 1997,
   elaboration: [
-    "Traveled Africa south of equator"
+    "Traveled Africa south of the equator"
   ],
   mapDetails: {
     rectangle: [
@@ -159,7 +159,7 @@ const softwareDeveloperSHIFT = {
   ],
   mapDetails: {
     marker: [51.07125736801148, 9.395899539904004],
-    description: "SHIFT GmbH"
+    name: "SHIFT GmbH"
   }
 }
 
