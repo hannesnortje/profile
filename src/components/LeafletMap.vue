@@ -1,8 +1,8 @@
 <template>
-  <div ref="map" class="flex place-content-center p-10">
+  <div ref="map" class="flex place-content-center p-10 sticky top-0">
     <l-map
       v-model:zoom="zoom"
-      :center="[-25.73689712936625, 28.30159599695999]"
+      :center="props.mapDetails.marker"
       :use-global-leaflet="false"
       style="height: 350px; width: 3500px"
     >
@@ -11,6 +11,25 @@
         layer-type="base"
         name="OpenStreetMap"
       ></l-tile-layer>
+      <l-marker v-if="props.mapDetails.marker" :lat-lng="props.mapDetails.marker"
+        ><l-tooltip
+          setTooltipContent="props.mapDetails.name"
+          :options="{ permanent: true, direction: 'top' }"
+          >{{ props.mapDetails.name }}</l-tooltip
+        ></l-marker
+      >
+      <l-rectangle
+        v-if="props.mapDetails.rectangle"
+        :bounds="[
+          [-11.939001483912847, 10.69196151310048],
+          [-34.981988293889124, 40.442936354762395]
+        ]"
+        ><l-tooltip
+          setTooltipContent="props.mapDetails.name"
+          :options="{ permanent: true, direction: 'center' }"
+          >{{ props.mapDetails.name }}</l-tooltip
+        ></l-rectangle
+      >
     </l-map>
   </div>
   <MapOverlay
@@ -25,9 +44,29 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import 'leaflet/dist/leaflet.css'
-import { LMap, LTileLayer } from '@vue-leaflet/vue-leaflet'
+import { LMap, LTileLayer, LMarker, LTooltip, LRectangle } from '@vue-leaflet/vue-leaflet'
 import { useMouseInElement } from '@vueuse/core'
 import MapOverlay from './MapOverlay.vue'
+
+const props = defineProps({
+  mapDetails: {
+    type: Object,
+    default() {
+      return { marker: [51.619806886449815, 8.895870756553801], name: 'Home Office' }
+    }
+  }
+})
+
+watch(
+  () => props.mapDetails,
+  (mapDetailsNew) => {
+    if (mapDetailsNew.rectangle && mapDetailsNew.rectangle.length > 0) {
+      zoom.value = 3
+    } else if (mapDetailsNew.marker && mapDetailsNew.marker.length > 0) {
+      zoom.value = 4
+    }
+  }
+)
 
 // const x = ref()
 // const y = ref()

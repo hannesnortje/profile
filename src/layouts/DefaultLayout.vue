@@ -6,7 +6,7 @@
     <div class="w-full sm:w-2/4 bg-gray-300">
       <slot></slot>
     </div>
-    <div class="w-full sm:w-1/4 bg-gray-400 top-0">
+    <div class="w-full sm:w-1/4 bg-gray-200 top-0">
       <slot name="right"></slot>
     </div>
   </div>

@@ -2,10 +2,10 @@
   <DefaultLayout>
     <template #left>
       <MetaInformation></MetaInformation>
-      <LeafletMap></LeafletMap>
+      <LeafletMap :mapDetails="mapPropDetails"></LeafletMap>
     </template>
 
-    <CV></CV>
+    <CV @mapDetails="mapDetails"></CV>
 
     <!-- <nav>
           <RouterLink to="/">Home</RouterLink>
@@ -24,8 +24,16 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import MetaInformation from '@/components/MetaInformation.vue'
 import LeafletMap from '@/components/LeafletMap.vue'
 import CV from './components/CV.vue'
+import { type MapDetails } from '@/interface/timeline'
+import { ref } from 'vue'
 
 //import { RouterLink, RouterView } from 'vue-router'
+
+const mapPropDetails = ref()
+
+const mapDetails = (value: MapDetails) => {
+  mapPropDetails.value = value
+}
 </script>
 <style scoped>
 nav {

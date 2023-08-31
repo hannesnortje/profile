@@ -1,5 +1,5 @@
 <template>
-  <div class="z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+  <div class="z-50 fixed inset-0 flex items-center justify-center">
     <div :style="overlayStyle"></div>
   </div>
 </template>
