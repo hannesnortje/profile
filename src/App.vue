@@ -15,9 +15,7 @@
 
     <!-- <RouterView /> -->
     <template #right>
-      <div>
-        <TechnicalToolboxVue></TechnicalToolboxVue>
-      </div>
+      <TechnicalToolboxVue></TechnicalToolboxVue>
     </template>
   </DefaultLayout>
 </template>
