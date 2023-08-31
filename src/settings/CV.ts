@@ -9,7 +9,7 @@ const matriculation = {
   ],
   mapDetails: {
     marker: [-25.73689712936625, 28.30159599695999],
-    description: "Silverton Highschool"
+    name: "Silverton Highschool"
   }
 }
 
@@ -24,7 +24,7 @@ const programmingTraining = {
   ],
   mapDetails: {
     marker: [-25.744841581023152, 28.18647619696029],
-    description: "Central Statistical Services"
+    name: "Central Statistical Services"
   }
 }
 
@@ -40,7 +40,7 @@ const missionary = {
       [-11.939001483912847, 10.69196151310048],
       [-34.981988293889124, 40.442936354762395]
     ],
-    description: "Africa south the equator"
+    name: "Africa south the equator"
   }
 }
 
@@ -55,7 +55,7 @@ const softwareDeveloperOakfields = {
   ],
   mapDetails: {
     marker: [-26.03460976113052, 27.874143661298145],
-    description: "Oakfield Farm"
+    name: "Oakfield Farm"
   }
 }
 
@@ -70,7 +70,7 @@ const pastorTeacher = {
   ],
   mapDetails: {
     marker: [54.69288736519534, -1.2122021240786767],
-    description: "Hardlepool UK"
+    name: "Hardlepool UK"
   }
 }
 
@@ -88,7 +88,7 @@ const softwareDeveloperEC = {
   ],
   mapDetails: {
     marker: [51.29183699299385, 9.458187241761452],
-    description: "Deutscher EC-Verband"
+    name: "Deutscher EC-Verband"
   }
 }
 
@@ -104,7 +104,7 @@ const softwareConsultant = {
   ],
   mapDetails: {
     marker: [51.29183699299385, 9.458187241761452],
-    description: "Deutscher EC-Verband"
+    name: "Deutscher EC-Verband"
   }
 }
 
@@ -120,7 +120,7 @@ const docent = {
   ],
   mapDetails: {
     marker: [51.179499092367024, 9.413111884061781],
-    description: "Deute, Gudensberg, Hesse, Germany"
+    name: "Deute, Gudensberg, Hesse, Germany"
   }
 }
 
@@ -136,7 +136,7 @@ const softwareDeveloperDAA = {
   ],
   mapDetails: {
     marker: [51.322407507978895, 9.472359566902004],
-    description: "DAA Kassel"
+    name: "DAA Kassel"
   }
 }
 
