@@ -14,7 +14,7 @@
 
     <!-- <RouterView /> -->
     <template #right>
-      <div>test right</div>
+      <TechnicalToolboxVue></TechnicalToolboxVue>
     </template>
   </DefaultLayout>
 </template>
@@ -26,6 +26,7 @@ import LeafletMap from '@/components/LeafletMap.vue'
 import CV from './components/CV.vue'
 import { type MapDetails } from '@/interface/timeline'
 import { ref } from 'vue'
+import TechnicalToolboxVue from './components/TechnicalToolbox.vue'
 
 //import { RouterLink, RouterView } from 'vue-router'
 

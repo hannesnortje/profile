@@ -1,6 +1,6 @@
 export interface MapDetails {
   marker?: number[];
-  rectangle?: [][];
+  rectangle?: number[][];
   name: string
 }
 
