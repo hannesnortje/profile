@@ -4,8 +4,9 @@
       <MetaInformation></MetaInformation>
       <LeafletMap :mapDetails="mapPropDetails"></LeafletMap>
     </template>
-
-    <CV @mapDetails="mapDetails"></CV>
+    <div>
+      <CV @mapDetails="mapDetails"></CV>
+    </div>
 
     <!-- <nav>
           <RouterLink to="/">Home</RouterLink>
@@ -14,7 +15,9 @@
 
     <!-- <RouterView /> -->
     <template #right>
-      <TechnicalToolboxVue></TechnicalToolboxVue>
+      <div>
+        <TechnicalToolboxVue></TechnicalToolboxVue>
+      </div>
     </template>
   </DefaultLayout>
 </template>

@@ -1,0 +1,22 @@
+export const toolbox = [
+    'JavaScript (ES6+)',
+    'Vue.js',
+    'Nuxt 3',
+    'Node.js',
+    'HTML5',
+    'CSS3',
+    'SASS/SCSS',
+    'Git',
+    'RESTful APIs',
+    'Responsive Web Design',
+    'Webpack',
+    'SQL',
+    'PostgreSQL',
+    'Bash',
+    'C++',
+    'Kotlin',
+    'Git',
+    'Confluence',
+    'Jira',
+    'Agile'
+  ]

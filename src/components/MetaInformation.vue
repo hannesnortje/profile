@@ -6,7 +6,7 @@
     </header>
 
     <div class="flex place-content-center pt-10">
-      <img class="object-cover h-48 w-96" :src="metaInformation.picture" />
+      <img class="object-cover w-32" :src="metaInformation.picture" />
     </div>
 
     <!-- address -->

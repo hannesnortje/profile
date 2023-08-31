@@ -77,10 +77,15 @@
           </div>
         </div>
       </div>
-      <div v-if="index < cv.length - 1" class="flex place-content-center pt-3">
+      <div
+        v-if="index < cv.length - 1"
+        class="flex place-content-center pt-3"
+        @mouseenter="spin(index)"
+      >
         <svg
-          height="64px"
-          width="64px"
+          ref="spinEvent"
+          height="30px"
+          width="35px"
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -150,6 +155,27 @@ const event: Ref<HTMLElement[]> = ref([])
 const learnMore = (index: number) => {
   event.value[index].classList.toggle('hidden')
 }
+const spinEvent = ref()
+
+const spin = (index: number) => {
+  spinEvent.value[index].classList.add('spin-animation')
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+.spin-animation {
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
