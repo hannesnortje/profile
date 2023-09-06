@@ -126,7 +126,7 @@ const docent = {
 
 const softwareDeveloperDAA = {
   
-  heading:"Software Developer at Deutsche Angestellten-Akademie",
+  heading:"Software Developer with Deutsche Angestellten-Akademie",
   description: "I developed a pbx waiting queue app in both in C++ with Qt5 and in vanilla JavaScript",
   startYear: 2020,
   endYear: 2021,
