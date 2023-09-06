@@ -40,7 +40,7 @@ const missionary = {
       [-11.939001483912847, 10.69196151310048],
       [-34.981988293889124, 40.442936354762395]
     ],
-    name: "Africa south the equator"
+    name: "Africa south of the equator"
   }
 }
 
