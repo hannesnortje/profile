@@ -1,11 +1,14 @@
 // tailwind.config.js
 module.exports = {
-  
-  content: [
+    
+content: [
     './src/**/*.{html,js,ts,vue}',
     
 ],
   media: false, // or 'media' or 'class'
+  fontFamily: {
+    'sans': ['Quicksand', 'sans-serif']
+  },
   theme: {
     extend: {},
   },
