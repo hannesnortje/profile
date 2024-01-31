@@ -37,110 +37,51 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import 'leaflet/dist/leaflet.css'
-import { LMap, LTileLayer, LMarker, LTooltip, LRectangle } from '@vue-leaflet/vue-leaflet'
-import { useMouseInElement } from '@vueuse/core'
-import MapOverlay from './MapOverlay.vue'
-import { useElementVisibility } from '@vueuse/core'
+import { ref, watch } from 'vue';
+import 'leaflet/dist/leaflet.css';
+import { LMap, LTileLayer, LMarker, LTooltip, LRectangle } from '@vue-leaflet/vue-leaflet';
+import { useMouseInElement } from '@vueuse/core';
+import MapOverlay from './MapOverlay.vue';
+import { useElementVisibility } from '@vueuse/core';
 
 const props = defineProps({
   mapDetails: {
     type: Object,
     default() {
-      return { marker: [51.619806886449815, 8.895870756553801], name: 'Home Office' }
+      return { marker: [51.619806886449815, 8.895870756553801], name: 'Home Office' };
     }
   }
-})
+});
 
 watch(
   () => props.mapDetails,
   (mapDetailsNew) => {
     if (mapDetailsNew.rectangle && mapDetailsNew.rectangle.length > 0) {
-      zoom.value = 3
+      zoom.value = 3;
     } else if (mapDetailsNew.marker && mapDetailsNew.marker.length > 0) {
-      zoom.value = 4
+      zoom.value = 4;
     }
   }
-)
+);
 
-// const x = ref()
-// const y = ref()
+const zoom = ref(4);
 
-// const getMouseCoordinates = (event: any) => {
-//   x.value = event.clientX
-//   y.value = event.clientY
-// }
+const map = ref(null);
 
-//const { x, y } = useMouse()
+const mapIsVisible = useElementVisibility(map);
 
-const zoom = ref(4)
-
-const map = ref(null)
-
-const mapIsVisible = useElementVisibility(map)
-
-const emit = defineEmits(['mapIsVisible'])
+const emit = defineEmits(['mapIsVisible']);
 
 watch(mapIsVisible, () => {
-  emit('mapIsVisible', mapIsVisible.value)
-})
+  emit('mapIsVisible', mapIsVisible.value);
+});
 
-const isOverlay = ref(false)
+const isOverlay = ref(false);
 
 const { elementPositionX, elementPositionY, elementHeight, elementWidth, isOutside } =
-  useMouseInElement(map)
+  useMouseInElement(map);
 
 watch(isOutside, () => {
-  isOutside.value ? (isOverlay.value = false) : (isOverlay.value = true)
-})
-
-/*const elementSize: number[][] = []
-
-watch(
-  [x, y, elementPositionX, elementPositionY, elementHeight, elementWidth],
-  (
-    [xNew, yNew, positionXNew, positionYNew, elementHeightNew, elementWidthNew],
-    [xPrev, yPrev, positionXPrev, positionYPrev, elementHeightPrev, elementWidthPrev]
-  ) => {
-    if (
-      (elementSize.length === 0 && elementPositionX.value > 0) ||
-      positionXNew !== positionXPrev ||
-      positionYNew !== positionYPrev ||
-      elementHeightNew !== elementHeightPrev ||
-      elementWidthNew !== elementWidthPrev
-    ) {
-      if (elementSize.length !== 0) elementSize.splice(0)
-      elementSize.push([positionXNew, positionYNew])
-      elementSize.push([positionXNew + elementWidthNew, positionYNew + elementHeightNew])
-    }
-    if (
-      xNew >= elementSize[0][0] &&
-      xNew <= elementSize[1][0] &&
-      yNew >= elementSize[0][1] &&
-      yNew <= elementSize[1][1]
-    ) {
-      isOverlay.value = true
-    }
-
-    if (
-      xNew < elementSize[0][0] ||
-      xNew > elementSize[1][0] ||
-      yNew < elementSize[0][1] ||
-      yNew > elementSize[1][1]
-    ) {
-      isOverlay.value = false
-    }
-
-    console.log(isOutside.value)
-    //   xNew,
-    //   yNew,
-    //   elementSize[0][0],
-    //   elementSize[1][0],
-    //   elementSize[0][1],
-    //   elementSize[1][1],
-    //   isOverlay.value
-    // )
-  }
-)*/
+  isOutside.value ? (isOverlay.value = false) : (isOverlay.value = true);
+});
 </script>
