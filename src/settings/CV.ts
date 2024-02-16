@@ -1,4 +1,4 @@
-import { type Timeline } from '@/interface/timeline'
+import { type Timeline } from '@/interface/timeline';
 
 const matriculation = {
   heading: 'Matriculated (Abitur)',
@@ -9,7 +9,7 @@ const matriculation = {
     marker: [-25.73689712936625, 28.30159599695999],
     name: 'Silverton Highschool'
   }
-}
+};
 
 const programmingTraining = {
   heading: 'Programmer Training',
@@ -25,7 +25,7 @@ const programmingTraining = {
     marker: [-25.744841581023152, 28.18647619696029],
     name: 'Central Statistical Services'
   }
-}
+};
 
 const missionary = {
   heading: 'Missionary',
@@ -39,22 +39,22 @@ const missionary = {
     ],
     name: 'Africa south of the equator'
   }
-}
+};
 
 const softwareDeveloperOakfields = {
-  heading: 'Software Developer at Oakfield Farm South Africa',
+  heading: 'Business informatics at Oakfield Farm South Africa',
   description:
-    'I planned, developed and executed the whole digitalization of an extensive wedding venue from analogue',
+    'I planned, developed and implemented the whole digitalization of an extensive wedding venue from analogue',
   startYear: 1998,
   endYear: 2001,
   elaboration: [
-    'I developed everything from online marketing, through booking and planning, until the scheduling of the waiters'
+    'I developed the whole IT-infrastructure starting from online marketing, through booking and planning, until the scheduling of the waiters'
   ],
   mapDetails: {
     marker: [-26.03460976113052, 27.874143661298145],
     name: 'Oakfield Farm'
   }
-}
+};
 
 const pastorTeacher = {
   heading: 'Miscellaneous',
@@ -68,12 +68,12 @@ const pastorTeacher = {
     marker: [54.69288736519534, -1.2122021240786767],
     name: 'Hardlepool UK'
   }
-}
+};
 
 const softwareDeveloperEC = {
-  heading: "Software Developer at 'Entschieden für Christus“ (EC) e.V.'",
+  heading: "Business informatics and sponsorship support for 'Entschieden für Christus“ (EC) e.V.'",
   description:
-    'I planned, developed and executed the whole digitalization of an extensive sponsorship program in India with 30 hostels from analogue',
+    'I planned, developed and implemented the whole digitalization of an extensive sponsorship program in India.',
   startYear: 2008,
   endYear: 2010,
   elaboration: ['SQL', 'SharePoint', 'Web Development', 'Visual Basic'],
@@ -81,12 +81,12 @@ const softwareDeveloperEC = {
     marker: [51.29183699299385, 9.458187241761452],
     name: 'Deutscher EC-Verband'
   }
-}
+};
 
 const softwareConsultant = {
   heading: "Software Consultant for 'Entschieden für Christus“ (EC) e.V.'",
-  description:
-    'MySQL database development and migration from MSSQL. Migration from Microsoft to Open Source.',
+  description: `Support and maintenance of the IT infrastructure for a sponsorship program (Deutscher EC-Verband).
+     Support of the update of IT processes: development of a MySQL database and transfer of data from MSSQL to MySQL`,
   startYear: 2010,
   endYear: 2016,
   elaboration: ['MySQL', 'Web Development'],
@@ -94,12 +94,12 @@ const softwareConsultant = {
     marker: [51.29183699299385, 9.458187241761452],
     name: 'Deutscher EC-Verband'
   }
-}
+};
 
 const docent = {
   heading: 'Miscellaneous',
   description:
-    'Leadership trainer, teacher, and external examiner for the University of South Africa (Ms and Ds).',
+    'Software development, Leadership trainer, teacher, and external examiner for the University of South Africa (Ms and Ds).',
   startYear: 2016,
   endYear: 2020,
   elaboration: ['Web Development', 'C++'],
@@ -107,7 +107,7 @@ const docent = {
     marker: [51.179499092367024, 9.413111884061781],
     name: 'Deute, Gudensberg, Hesse, Germany'
   }
-}
+};
 
 const softwareDeveloperDAA = {
   heading: 'Software Developer with Deutsche Angestellten-Akademie',
@@ -115,12 +115,19 @@ const softwareDeveloperDAA = {
     'I developed a pbx waiting queue app in both in C++ with Qt5 and in vanilla JavaScript',
   startYear: 2020,
   endYear: 2021,
-  elaboration: ['C++', 'PBX waiting queue app in both C++ and vanilla JavaScript'],
+  elaboration: [
+    'JavaScript',
+    'Kotlin',
+    'Tensorflow',
+    'C++',
+    'Qt5',
+    'PBX waiting queue app in both C++ and vanilla JavaScript'
+  ],
   mapDetails: {
     marker: [51.322407507978895, 9.472359566902004],
     name: 'DAA Kassel'
   }
-}
+};
 
 const softwareDeveloperSHIFT = {
   heading: 'Software Developer at SHIFT GmbH',
@@ -143,7 +150,7 @@ const softwareDeveloperSHIFT = {
     marker: [51.07125736801148, 9.395899539904004],
     name: 'SHIFT GmbH'
   }
-}
+};
 
 const alfatrainingHTML = {
   heading: 'Alfatraining',
@@ -164,7 +171,7 @@ const alfatrainingHTML = {
     marker: [51.61984692674821, 8.895881498197118],
     name: 'Lichtenau Wesfalen, Germany'
   }
-}
+};
 
 export const timeline: Timeline[] = [
   matriculation,
@@ -178,4 +185,4 @@ export const timeline: Timeline[] = [
   softwareDeveloperDAA,
   softwareDeveloperSHIFT,
   alfatrainingHTML
-]
+];
