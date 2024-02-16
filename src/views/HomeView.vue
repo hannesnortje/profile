@@ -24,7 +24,7 @@ import DefaultLayout from '@/layouts/DefaultLayout.vue';
 import MetaInformation from '@/components/MetaInformation.vue';
 import LeafletMap from '@/components/LeafletMap.vue';
 import CVElements from '@/components/CVElements.vue';
-import { MapDetails } from '@/interface/timeline';
+import type { MapDetails } from '@/interface/timeline';
 import { ref } from 'vue';
 import TechnicalToolbox from '@/components/TechnicalToolbox.vue';
 import FooterElement from '@/components/FooterElement.vue';
