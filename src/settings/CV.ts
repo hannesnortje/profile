@@ -177,6 +177,7 @@ const ceruleancircleHTML = {
   heading: 'Cerulean Circle GmbH',
   description: 'Developing Web4x serverless JavaScript components in ONCE with the WODA IDE. Engineered local AI server hosting offline models, as well as creating several Python AI applications. Creating intelligent AI agents for real-world use cases and provided AI development consulting services. Extensive and proficient Vibe programming',
   startYear: 2024,
+  endYear: 'present',
   elaboration: [
     'HTML, CSS and JavaScript',
     'JavaScript',
@@ -184,7 +185,8 @@ const ceruleancircleHTML = {
     'PyTorch',
     'TensorFlow',
     'Keras',
-    'ONCE'
+    'ONCE',
+    'Vibe programming'
   ],
   mapDetails: {
     marker: [48.143540087423816, 11.575464554035177],
