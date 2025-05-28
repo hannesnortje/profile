@@ -1,4 +1,6 @@
 export const toolbox = [
+  'Vibe programming',
+  'PyTorch',
   'Python',
   'Tensorflow',
   'Machine Learning',
