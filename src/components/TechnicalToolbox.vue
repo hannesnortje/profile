@@ -25,6 +25,8 @@
 import { toolbox } from '@/settings/toolbox'
 
 const categoryLabels: Record<keyof typeof toolbox, string> = {
+  agenticCoding: 'Agentic Coding',
+  dataScience: 'Data Science',
   languages: 'Languages',
   frameworks: 'Frameworks',
   others: 'Others'
