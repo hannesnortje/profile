@@ -1,68 +1,53 @@
 # profile
 
-This template should help get you started developing with Vue 3 in Vite.
+Personal CV and portfolio site for **Dr. Johannes A. Nortjé** — a single-page Vue 3 application showing a chronological timeline of work, training, and projects, with a synchronised Leaflet map and a sidebar of technical skills.
 
-## Recommended IDE Setup
+## Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- **Vue 3** + **Vite** + **TypeScript**
+- **Vue Router** for the home / imprint routes
+- **Pinia** for state
+- **Tailwind CSS** for styling
+- **Leaflet** via `@vue-leaflet/vue-leaflet` for the location map
+- **Cypress** (e2e + component) and **Vitest** for testing
 
-## Type Support for `.vue` Imports in TS
+## Project layout
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+```
+src/
+  views/             HomeView, LegalView (imprint)
+  layouts/           DefaultLayout — 3-column responsive shell
+  components/        CVElements, LeafletMap, MetaInformation,
+                     TechnicalToolbox, FooterElement, MyImprint, MapOverlay
+  settings/          CV.ts (timeline data), toolbox.ts (skills),
+                     metaInformation.ts (name/address/contact)
+  interface/         shared TypeScript types
+  router/            route definitions
+```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Most content lives in `src/settings/` — edit those files to update the CV.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Development
 
 ```sh
 npm install
+npm run dev        # vite dev server
+npm run build      # type-check + production build to dist/
+npm run preview    # serve the production build locally
+npm run lint       # eslint --fix
+npm run format     # prettier write
 ```
 
-### Compile and Hot-Reload for Development
+### Testing
 
 ```sh
-npm run dev
+npm run test:unit       # vitest
+npm run test:e2e        # cypress against a production build
+npm run test:e2e:dev    # cypress against the dev server
 ```
 
-### Type-Check, Compile and Minify for Production
+## Deployment
 
-```sh
-npm run build
-```
+The site is deployed on **Vercel** and auto-redeploys on every push to `main`. No `vercel.json` is required — Vercel auto-detects Vite, runs `npm run build`, and serves `dist/`.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+To check deploy status, open the project on https://vercel.com and look for `hannesnortje/profile`.

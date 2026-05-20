@@ -4,7 +4,7 @@
       v-model:zoom="zoom"
       :center="props.mapDetails.marker"
       :use-global-leaflet="false"
-      style="height: 350px; width: 3500px"
+      style="height: 350px; width: 100%"
     >
       <l-tile-layer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
