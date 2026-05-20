@@ -212,16 +212,16 @@ const alfatrainingHTML = {
 const ceruleancircleHTML = {
   heading: 'AI Specialist & Agentic Coding – Cerulean Circle GmbH',
   description:
-    'Working as an AI Specialist and Data Scientist, applying Agentic Coding to full-stack development and AI engineering. Develop Web4x serverless JavaScript components in ONCE with the WODA IDE; engineer local AI servers hosting offline models; build Python AI applications and intelligent agents for real-world use cases. Provide AI development consulting. Extensive and proficient Vibe programming.',
+    'Working as an AI Specialist and Data Scientist, applying Agentic Coding to full-stack development and AI engineering. Develop Web4x serverless JavaScript components in ONCE with the WODA IDE; current main focus is oosh, a Bash-based tool; engineer local AI servers hosting offline models; build Python AI applications and intelligent agents for real-world use cases. Provide AI development consulting. Extensive and proficient Vibe programming.',
   startYear: 2024,
   endYear: 'present',
   elaboration: [
     'AI Specialist & Data Scientist',
     'Agentic Coding',
-    'Full-stack development (Vue 3, Nuxt 3, Strapi)',
+    'Full-stack development',
     'Local AI server hosting offline models',
     'Python AI applications and intelligent agents',
-    'Web4x / ONCE / WODA IDE',
+    'Web4x / ONCE / WODA IDE / oosh (Bash)',
     'Vibe programming',
     'AI development consulting'
   ],
