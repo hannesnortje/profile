@@ -42,10 +42,10 @@ const missionary = {
 };
 
 const softwareDeveloperOakfields = {
-  heading: 'Business informatics at Oakfield Farm South Africa',
+  heading: 'Business Informatics Specialist – Oakfield Farm',
   description:
     'I planned, developed and implemented the whole digitalization of an extensive wedding venue from analogue',
-  startYear: 1998,
+  startYear: 1999,
   endYear: 2001,
   elaboration: [
     'I developed the whole IT-infrastructure starting from online marketing, through booking and planning, until the scheduling of the waiters'
@@ -53,6 +53,18 @@ const softwareDeveloperOakfields = {
   mapDetails: {
     marker: [-26.03460976113052, 27.874143661298145],
     name: 'Oakfield Farm'
+  }
+};
+
+const baDegree = {
+  heading: 'Bachelor of Arts (B.A.)',
+  description: 'Bachelor of Arts awarded by the University of South Africa (UNISA).',
+  startYear: 1998,
+  endYear: 2001,
+  elaboration: ['UNISA, South Africa'],
+  mapDetails: {
+    marker: [-25.768, 28.191],
+    name: 'UNISA, Pretoria'
   }
 };
 
@@ -67,6 +79,18 @@ const pastorTeacher = {
   mapDetails: {
     marker: [54.69288736519534, -1.2122021240786767],
     name: 'Hartlepool UK'
+  }
+};
+
+const maTheology = {
+  heading: 'M.A. in Systematic Theology & Philosophy',
+  description: 'Master of Arts awarded by the University of South Africa (UNISA).',
+  startYear: 2003,
+  endYear: 2006,
+  elaboration: ['UNISA, South Africa'],
+  mapDetails: {
+    marker: [-25.768, 28.191],
+    name: 'UNISA, Pretoria'
   }
 };
 
@@ -96,10 +120,22 @@ const softwareConsultant = {
   }
 };
 
+const dthPhd = {
+  heading: 'Doctorate (DTh / Ph.D.) in Systematic Theology & Philosophy',
+  description: 'Doctorate awarded by the University of South Africa (UNISA).',
+  startYear: 2010,
+  endYear: 2012,
+  elaboration: ['UNISA, South Africa'],
+  mapDetails: {
+    marker: [-25.768, 28.191],
+    name: 'UNISA, Pretoria'
+  }
+};
+
 const docent = {
-  heading: 'Miscellaneous',
+  heading: 'Software Application Technologist – Vielfach',
   description:
-    'Software development, Leadership trainer, teacher, and external examiner for the University of South Africa (Ms and Ds).',
+    'Development of online educational software and curricula; leadership training, teaching, and external examination for the University of South Africa (M.A. and D.Th.).',
   startYear: 2016,
   endYear: 2020,
   elaboration: ['Web Development', 'C++'],
@@ -110,9 +146,9 @@ const docent = {
 };
 
 const softwareDeveloperDAA = {
-  heading: 'Software Developer with Deutsche Angestellten-Akademie',
+  heading: 'PBX App Developer – InBeQ / DAA',
   description:
-    'I developed a pbx waiting queue app in both in C++ with Qt5 and in vanilla JavaScript',
+    'I developed a PBX waiting-queue app in both C++ with Qt5 and in vanilla JavaScript',
   startYear: 2020,
   endYear: 2021,
   elaboration: [
@@ -130,9 +166,9 @@ const softwareDeveloperDAA = {
 };
 
 const softwareDeveloperSHIFT = {
-  heading: 'Software Developer at SHIFT GmbH',
+  heading: 'JavaScript Frontend Developer – SHIFT GmbH',
   description:
-    'Development of the ONCE-Framework in Agile Scrumming. Development, documentation, and the training of OOP with Bash. JavaScript, TypeScript und Nuxt3 training and development. Conceptualizing and development of virtual machines in VirtualBox for different development environments. Conceptualizing and development of Nuxt3 starter templates. Conceptualizing and development of a Strapi backend. Development of Nuxt3 components connecting with Backends (RESTful Api and GraphQL)',
+    'Development of the ONCE-Framework in Agile Scrumming. Development, documentation, and training of OOP with Bash. JavaScript, TypeScript and Nuxt3 training and development. Conceptualizing and development of virtual machines in VirtualBox for different development environments. Conceptualizing and development of Nuxt3 starter templates. Conceptualizing and development of a Strapi backend. Development of Nuxt3 components connecting with backends (RESTful API and GraphQL).',
   startYear: 2021,
   endYear: 2023,
   elaboration: [
@@ -174,8 +210,8 @@ const alfatrainingHTML = {
 };
 
 const ceruleancircleHTML = {
-  heading: 'Cerulean Circle GmbH',
-  description: 'Developing Web4x serverless JavaScript components in ONCE with the WODA IDE. Engineered local AI server hosting offline models, as well as creating several Python AI applications. Creating intelligent AI agents for real-world use cases and provided AI development consulting services. Extensive and proficient Vibe programming',
+  heading: 'Full Stack Developer – Cerulean Circle GmbH',
+  description: 'Developing Web4x serverless JavaScript components in ONCE with the WODA IDE. Engineered local AI server hosting offline models, as well as creating several Python AI applications. Creating intelligent AI agents for real-world use cases and provided AI development consulting services. Extensive and proficient Vibe programming.',
   startYear: 2024,
   endYear: 'present',
   elaboration: [
@@ -200,9 +236,12 @@ export const timeline: Timeline[] = [
   programmingTraining,
   missionary,
   softwareDeveloperOakfields,
+  baDegree,
   pastorTeacher,
+  maTheology,
   softwareDeveloperEC,
   softwareConsultant,
+  dthPhd,
   docent,
   softwareDeveloperDAA,
   softwareDeveloperSHIFT,
