@@ -5,16 +5,17 @@
       <p class="mb-6">This website is owned and operated by Johannes A. Nortjé.</p>
 
       <p class="mb-4">
-        <span class="font-bold inline-block w-24">Address:</span> Lichtenau 19, 33165 Lichtenau
-        Wesfalen, Germany
+        <span class="font-bold inline-block w-24">Address:</span> Am Kindergarten 19, 33165
+        Lichtenau, Nordrhein-Westfalen, Germany
       </p>
 
       <p class="mb-4">
-        <span class="font-bold inline-block w-24">Contact:</span> dr.h.nortje@gmail.com
+        <span class="font-bold inline-block w-24">Contact:</span> hannes.nortje@gmail.com
       </p>
 
       <p class="mb-6">
-        <span class="font-bold inline-block w-24">Copyright:</span> 2024 Johannes Nortjé
+        <span class="font-bold inline-block w-24">Copyright:</span> &copy;
+        {{ new Date().getFullYear() }} Johannes Nortjé
       </p>
 
       <p class="font-bold mb-6">All rights reserved.</p>

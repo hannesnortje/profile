@@ -14,7 +14,7 @@ const matriculation = {
 const programmingTraining = {
   heading: 'Programmer Training',
   description:
-    'The years 1991 to 1992 I completed my training as Software Developer at the department of Central Statical Services in Pretoria, South Africa',
+    'The years 1991 to 1992 I completed my training as Software Developer at the department of Central Statistical Services in Pretoria, South Africa',
   startYear: 1991,
   endYear: 1992,
   elaboration: [
@@ -66,12 +66,12 @@ const pastorTeacher = {
   ],
   mapDetails: {
     marker: [54.69288736519534, -1.2122021240786767],
-    name: 'Hardlepool UK'
+    name: 'Hartlepool UK'
   }
 };
 
 const softwareDeveloperEC = {
-  heading: "Business informatics and sponsorship support for 'Entschieden für Christus“ (EC) e.V.'",
+  heading: "Business informatics and sponsorship support for 'Entschieden für Christus' (EC) e.V.",
   description:
     'I planned, developed and implemented the whole digitalization of an extensive sponsorship program in India.',
   startYear: 2008,
@@ -84,7 +84,7 @@ const softwareDeveloperEC = {
 };
 
 const softwareConsultant = {
-  heading: "Software Consultant for 'Entschieden für Christus“ (EC) e.V.'",
+  heading: "Software Consultant for 'Entschieden für Christus' (EC) e.V.",
   description: `Support and maintenance of the IT infrastructure for a sponsorship program (Deutscher EC-Verband).
      Support of the update of IT processes: development of a MySQL database and transfer of data from MSSQL to MySQL`,
   startYear: 2010,
@@ -142,7 +142,7 @@ const softwareDeveloperSHIFT = {
     'Vuetify',
     'GraphQL',
     'Strapi',
-    'Achilles scrumming',
+    'Agile scrumming',
     'Bash',
     'OOP'
   ],
@@ -154,7 +154,7 @@ const softwareDeveloperSHIFT = {
 
 const alfatrainingHTML = {
   heading: 'Alfatraining',
-  description: 'Intensive and exstensive course/modules over 44 weeks',
+  description: 'Intensive and extensive course/modules over 44 weeks',
   startYear: 2023,
   endYear: 2024,
   elaboration: [
@@ -162,10 +162,10 @@ const alfatrainingHTML = {
     'C/C++ and Qt',
     'JavaScript',
     'Python',
-    'Statics',
+    'Statistics',
     'Machine Learning',
     'Deep Learning',
-    'Anyletics'
+    'Analytics'
   ],
   mapDetails: {
     marker: [51.61984692674821, 8.895881498197118],
