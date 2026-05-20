@@ -15,7 +15,7 @@ export const toolbox = {
     'LangChain / LlamaIndex',
     'VS Code (Python / Jupyter)'
   ],
-  languages: ['Python', 'C++', 'JavaScript', 'Bash', 'Vibe programming'],
+  languages: ['Python', 'C++', 'JavaScript / TypeScript', 'Bash', 'Vibe programming'],
   frameworks: ['TensorFlow', 'Keras', 'Qt', 'Vue 3', 'Nuxt 3', 'Vuetify', 'Strapi'],
   others: ['HTML', 'CSS', 'GraphQL', 'PostgreSQL', 'Cypress', 'Git', 'OOP']
 };

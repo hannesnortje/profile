@@ -152,7 +152,7 @@ const softwareDeveloperDAA = {
   startYear: 2020,
   endYear: 2021,
   elaboration: [
-    'JavaScript',
+    'JavaScript / TypeScript',
     'Kotlin',
     'Tensorflow',
     'C++',
@@ -166,7 +166,7 @@ const softwareDeveloperDAA = {
 };
 
 const softwareDeveloperSHIFT = {
-  heading: 'JavaScript Frontend Developer – SHIFT GmbH',
+  heading: 'JavaScript / TypeScript Frontend Developer – SHIFT GmbH',
   description:
     'Development of the ONCE-Framework in Agile Scrumming. Development, documentation, and training of OOP with Bash. JavaScript, TypeScript and Nuxt3 training and development. Conceptualizing and development of virtual machines in VirtualBox for different development environments. Conceptualizing and development of Nuxt3 starter templates. Conceptualizing and development of a Strapi backend. Development of Nuxt3 components connecting with backends (RESTful API and GraphQL).',
   startYear: 2021,
@@ -194,9 +194,9 @@ const alfatrainingHTML = {
   startYear: 2023,
   endYear: 2024,
   elaboration: [
-    'HTML, CSS and JavaScript',
+    'HTML, CSS, JavaScript and TypeScript',
     'C/C++ and Qt',
-    'JavaScript',
+    'JavaScript / TypeScript',
     'Python',
     'Statistics',
     'Machine Learning',
@@ -212,7 +212,7 @@ const alfatrainingHTML = {
 const ceruleancircleHTML = {
   heading: 'AI Specialist & Agentic Coding – Cerulean Circle GmbH',
   description:
-    'Working as an AI Specialist and Data Scientist, applying Agentic Coding to full-stack development and AI engineering. Develop Web4x serverless JavaScript components in ONCE with the WODA IDE; current main focus is oosh, a Bash framework; engineer local AI servers hosting offline models; build Python AI applications and intelligent agents for real-world use cases. Provide AI development consulting. Extensive and proficient Vibe programming.',
+    'Working as an AI Specialist and Data Scientist, applying Agentic Coding to full-stack development and AI engineering. Develop Web4x serverless JavaScript / TypeScript components in ONCE with the WODA IDE; current main focus is oosh, a Bash framework; engineer local AI servers hosting offline models; build Python AI applications and intelligent agents for real-world use cases. Provide AI development consulting. Extensive and proficient Vibe programming.',
   startYear: 2024,
   endYear: 'present',
   elaboration: [
