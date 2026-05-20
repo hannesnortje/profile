@@ -145,7 +145,7 @@ import { onMounted, ref, type Ref } from 'vue'
 const cv = ref()
 
 onMounted(() => {
-  cv.value = timeline
+  cv.value = [...timeline].reverse()
 })
 
 const reverseCV = () => {
