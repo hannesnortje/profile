@@ -210,19 +210,20 @@ const alfatrainingHTML = {
 };
 
 const ceruleancircleHTML = {
-  heading: 'Full Stack Developer – Cerulean Circle GmbH',
-  description: 'Developing Web4x serverless JavaScript components in ONCE with the WODA IDE. Engineered local AI server hosting offline models, as well as creating several Python AI applications. Creating intelligent AI agents for real-world use cases and provided AI development consulting services. Extensive and proficient Vibe programming.',
+  heading: 'AI Specialist & Agentic Coding – Cerulean Circle GmbH',
+  description:
+    'Working as an AI Specialist and Data Scientist, applying Agentic Coding to full-stack development and AI engineering. Develop Web4x serverless JavaScript components in ONCE with the WODA IDE; engineer local AI servers hosting offline models; build Python AI applications and intelligent agents for real-world use cases. Provide AI development consulting. Extensive and proficient Vibe programming.',
   startYear: 2024,
   endYear: 'present',
   elaboration: [
-    'HTML, CSS and JavaScript',
-    'JavaScript',
-    'Python',
-    'PyTorch',
-    'TensorFlow',
-    'Keras',
-    'ONCE',
-    'Vibe programming'
+    'AI Specialist & Data Scientist',
+    'Agentic Coding',
+    'Full-stack development (Vue 3, Nuxt 3, Strapi)',
+    'Local AI server hosting offline models',
+    'Python AI applications and intelligent agents',
+    'Web4x / ONCE / WODA IDE',
+    'Vibe programming',
+    'AI development consulting'
   ],
   mapDetails: {
     marker: [48.143540087423816, 11.575464554035177],
