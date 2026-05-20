@@ -1,7 +1,14 @@
 <template>
   <div class="p-3 sticky top-0">
     <div class="bg-white border-4 border-blue-600 shadow-lg rounded-lg p-6 space-y-6">
-      <h2 class="text-3xl font-semibold">Technical Skills</h2>
+      <header>
+        <h2 class="text-2xl font-bold text-blue-700 leading-snug">
+          AI Specialist &amp; Agentic Coder · Data Scientist
+        </h2>
+        <p class="text-xs font-bold uppercase tracking-wider text-gray-500 mt-3">
+          Technical Skills
+        </p>
+      </header>
       <div v-for="(items, category) in toolbox" :key="category">
         <h3 class="text-sm font-bold uppercase tracking-wider text-blue-700 mb-2">
           {{ categoryLabels[category] }}
