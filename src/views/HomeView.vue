@@ -5,13 +5,13 @@
       <LeafletMap :mapDetails="mapPropDetails" @mapIsVisible="mapIsVisible"></LeafletMap>
     </template>
     <div>
-      <TechnicalToolbox></TechnicalToolbox>
-    </div>
-    <template #right>
       <div class="flex flex-col space-y-17">
         <LeafletMap v-if="visible" :mapDetails="mapPropDetails" class="z-50"></LeafletMap>
         <CVElements @mapDetails="mapDetails" :class="visible ? 'pt-12' : 'pt-0'"></CVElements>
       </div>
+    </div>
+    <template #right>
+      <TechnicalToolbox></TechnicalToolbox>
     </template>
     <template #footer>
       <div class="flex flex-row justify-center bg-gray-200"><FooterElement></FooterElement></div>
