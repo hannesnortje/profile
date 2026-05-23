@@ -6,7 +6,7 @@ export const metaInformation = {
     email: "hannes.nortje@gmail.com",
     telephone: "+4917680037985",
     languages: [
-        "English",
+        "English (native)",
         "Afrikaans (native)",
         "German (fluent)"
     ]
